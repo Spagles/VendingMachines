@@ -53,9 +53,11 @@
     <ItemGroup>
       <Reference Include="Hospitality">
         <HintPath>..\..\..\Hospitality\1.6\Assemblies\Hospitality.dll</HintPath>
+        <Private>false</Private>
       </Reference>
     </ItemGroup>
+    <!-- Surface the mod's content XML (Defs, Patches, Languages, About...) in the IDE so it's reachable alongside the source -->
     <ItemGroup>
-      <Folder Include="Properties\" />
+        <None Include="..\..\**\*.xml" Exclude="..\..\Source\**\*.xml" Link="%(RecursiveDir)%(Filename)%(Extension)" />
     </ItemGroup>
 </Project>

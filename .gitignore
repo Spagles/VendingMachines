@@ -1,2 +1,8 @@
 About/PublishedFileId.txt
 .vscode/obj
+# Build artifacts
+obj/
+bin/
+*.pdb
+*.user
+.vs/
